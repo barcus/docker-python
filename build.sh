@@ -32,6 +32,6 @@ docker build -t ${USER}/python:3.2.3 3.2.3
 # Python 3.4.2
 docker build -t ${USER}/python:3.4.2 3.4.2
 
-# Python 3.5.1
-docker build -t ${USER}/python:3.5.1 3.5.1
+# Python 3.6.0
+docker build -t ${USER}/python:3.6.0 3.6.0
 # EOF
