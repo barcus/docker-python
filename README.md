@@ -2,7 +2,7 @@
 
 ## Overview
 
-Docker image of Python.
+Docker images of Python.
 
 ## Description
 
@@ -25,6 +25,7 @@ Supported tags and respective Dockerfile links.
 - 2.7.9, latest ([2.7.9/Dockerfile][3])
 - 3.2.3 ([3.2.3/Dockerfile][4])
 - 3.4.2 ([3.4.2/Dockerfile][5])
+- 3.5.1 ([3.4.2/Dockerfile][6])
 
 ## Usage
 
@@ -49,6 +50,7 @@ Feel free to contribute on GitHub.
 [3]: https://github.com/rockyluke/docker-python/blob/master/2.7.9/Dockerfile
 [4]: https://github.com/rockyluke/docker-python/blob/master/3.2.3/Dockerfile
 [5]: https://github.com/rockyluke/docker-python/blob/master/3.4.2/Dockerfile
+[6]: https://github.com/rockyluke/docker-python/blob/master/3.5.1/Dockerfile
 [license-img]: https://img.shields.io/badge/license-ISC-blue.svg
 [docker-img]: https://img.shields.io/docker/pulls/rockyluke/python.svg
 [docker-url]: https://registry.hub.docker.com/u/rockyluke/python
