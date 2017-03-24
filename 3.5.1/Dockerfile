@@ -28,7 +28,8 @@ RUN apt-get update && \
       build-essential \
       libssl-dev \
       libsasl2-dev \
-      libmysqlclient-dev && \
+      libmysqlclient-dev \
+      virtualenv && \
     apt-clean
 
 # pip (https://pypi.python.org/pypi/pip)
