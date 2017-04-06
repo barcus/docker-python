@@ -20,13 +20,13 @@ need easy-to-use scripting or automation interfaces.
 
 Supported tags and respective Dockerfile links.
 
-- 2.6.6 ([2.6.6/Dockerfile][1])
+- 2.6.6, 2.6 ([2.6.6/Dockerfile][1])
 - 2.7.3 ([2.7.3/Dockerfile][2])
-- 2.7.9, latest ([2.7.9/Dockerfile][3])
-- 3.2.3 ([3.2.3/Dockerfile][4])
-- 3.4.2 ([3.4.2/Dockerfile][5])
-- 3.5.1 ([3.5.1/Dockerfile][6])
-- 3.6.0 ([3.6.0/Dockerfile][7])
+- 2.7.9, 2.7, latest ([2.7.9/Dockerfile][3])
+- 3.2.3, 3.2 ([3.2.3/Dockerfile][4])
+- 3.4.2, 3.4 ([3.4.2/Dockerfile][5])
+- 3.5.1, 3.5 ([3.5.1/Dockerfile][6])
+- 3.6.0, 3.6 ([3.6.0/Dockerfile][7])
 
 ## Usage
 

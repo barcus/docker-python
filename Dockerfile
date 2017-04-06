@@ -32,6 +32,8 @@ RUN apt-get update && \
     apt-clean
 
 # pip (https://pypi.python.org/pypi/pip/)
+RUN pip install --upgrade pip
+
 # pylint (https://www.pylint.org/)
-RUN pip install --upgrade pip pylint
+RUN pip install pylint
 # EOF

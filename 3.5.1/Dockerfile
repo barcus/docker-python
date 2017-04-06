@@ -33,8 +33,10 @@ RUN apt-get update && \
     apt-clean
 
 # pip (https://pypi.python.org/pypi/pip/)
-# pylint (https://www.pylint.org/)
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.5 60 && \
     update-alternatives --install /usr/bin/pip    pip    /usr/bin/pip3 60 && \
-    pip install --upgrade pip pylint
+    pip install --upgrade pip
+
+# pylint (https://www.pylint.org/)
+RUN pip install pylint
 # EOF
