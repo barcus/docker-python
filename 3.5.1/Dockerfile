@@ -32,8 +32,9 @@ RUN apt-get update && \
       virtualenv && \
     apt-clean
 
-# pip (https://pypi.python.org/pypi/pip)
+# pip (https://pypi.python.org/pypi/pip/)
+# pylint (https://www.pylint.org/)
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.5 60 && \
     update-alternatives --install /usr/bin/pip    pip    /usr/bin/pip3 60 && \
-    pip install --upgrade pip
+    pip install --upgrade pip pylint
 # EOF

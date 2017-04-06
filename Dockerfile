@@ -31,6 +31,7 @@ RUN apt-get update && \
       libmysqlclient-dev && \
     apt-clean
 
-# pip (https://pypi.python.org/pypi/pip)
-RUN pip install --upgrade pip
+# pip (https://pypi.python.org/pypi/pip/)
+# pylint (https://www.pylint.org/)
+RUN pip install --upgrade pip pylint
 # EOF
