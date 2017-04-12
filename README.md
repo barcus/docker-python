@@ -2,10 +2,6 @@
 
 ## Overview
 
-Docker images of Python.
-
-## Description
-
 Python  combines  remarkable power  with  very  clear  syntax. It  has  modules,
 classes,  exceptions,   very  high  level   dynamic  data  types,   and  dynamic
 typing. There are interfaces  to many system calls and libraries,  as well as to
@@ -15,6 +11,10 @@ usable as an extension language for applications written in other languages that
 need easy-to-use scripting or automation interfaces.
 
 [python.org](https://www.python.org/)
+
+## Description
+
+Docker images of Python.
 
 ## Tags
 
