@@ -17,9 +17,9 @@ MAINTAINER rockyluke
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y \
+RUN apt-get update  -qq && \
+    apt-get upgrade -qq -y && \
+    apt-get install -qq -y \
       python3.6 \
       python3-pip \
       python3.6-dev \
@@ -34,8 +34,8 @@ RUN apt-get update && \
 # pip (https://pypi.python.org/pypi/pip/)
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.6 60 && \
     update-alternatives --install /usr/bin/pip    pip    /usr/bin/pip3 60 && \
-    pip install --upgrade pip
+    pip install --quiet --upgrade pip
 
 # pylint (https://www.pylint.org/)
-RUN pip install pylint
+RUN pip install --quiet pylint
 # EOF

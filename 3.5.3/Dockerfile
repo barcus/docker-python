@@ -12,7 +12,7 @@
 # OTHER  TORTIOUS ACTION,  ARISING  OUT OF  OR  IN CONNECTION  WITH  THE USE  OR
 # PERFORMANCE OF THIS SOFTWARE.
 
-FROM rockyluke/debian:squeeze
+FROM rockyluke/debian:stretch
 MAINTAINER rockyluke
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -20,19 +20,21 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update  -qq && \
     apt-get upgrade -qq -y && \
     apt-get install -qq -y \
-      python \
-      python-pip \
-      python-dev \
-      python-setuptools \
-      python-virtualenv \
+      python3 \
+      python3-pip \
+      python3-dev \
+      python3-setuptools \
+      python3-virtualenv \
       build-essential \
       libssl-dev \
       libsasl2-dev \
-      libmysqlclient-dev && \
+      libmariadbclient-dev-compat && \
     apt-clean
 
 # pip (https://pypi.python.org/pypi/pip/)
-RUN pip install --quiet --upgrade pip
+RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.5 60 && \
+    update-alternatives --install /usr/bin/pip    pip    /usr/bin/pip3 60 && \
+    pip install --quiet --upgrade pip
 
 # pylint (https://www.pylint.org/)
 RUN pip install --quiet pylint

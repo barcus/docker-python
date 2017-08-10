@@ -12,14 +12,14 @@
 # OTHER  TORTIOUS ACTION,  ARISING  OUT OF  OR  IN CONNECTION  WITH  THE USE  OR
 # PERFORMANCE OF THIS SOFTWARE.
 
-FROM rockyluke/debian:jessie
+FROM rockyluke/debian:stretch
 MAINTAINER rockyluke
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y \
+RUN apt-get update  -qq && \
+    apt-get upgrade -qq -y && \
+    apt-get install -qq -y \
       python \
       python-pip \
       python-dev \
@@ -28,7 +28,7 @@ RUN apt-get update && \
       build-essential \
       libssl-dev \
       libsasl2-dev \
-      libmysqlclient-dev && \
+      libmariadbclient-dev-compat && \
     apt-clean
 
 # pip (https://pypi.python.org/pypi/pip/)
