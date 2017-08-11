@@ -28,7 +28,8 @@ RUN apt-get update  -qq && \
       build-essential \
       libssl-dev \
       libsasl2-dev \
-      libmariadbclient-dev-compat && \
+      libmariadbclient-dev-compat \
+      virtualenv && \
     apt-clean
 
 # pip (https://pypi.python.org/pypi/pip/)

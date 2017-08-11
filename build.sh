@@ -32,6 +32,9 @@ docker build --force-rm --tag ${USER}/python:2.7.13 2.7.13
 # Python 3.4.2
 docker build --force-rm --tag ${USER}/python:3.4.2 3.4.2
 
+# Python 3.5.2
+docker build --force-rm --tag ${USER}/python:3.5.2 3.5.2
+
 # Python 3.5.3
 docker build --force-rm --tag ${USER}/python:3.5.3 3.5.3
 
@@ -46,6 +49,7 @@ echo -n '2.7.3: '  && docker run --rm ${USER}/python:2.7.3 python --version
 echo -n '2.7.9: '  && docker run --rm ${USER}/python:2.7.9 python --version
 echo -n '2.7.13: ' && docker run --rm ${USER}/python:2.7.13 python --version
 echo -n '3.4.2: '  && docker run --rm ${USER}/python:3.4.2 python --version
+echo -n '3.5.2: '  && docker run --rm ${USER}/python:3.5.2 python --version
 echo -n '3.5.3: '  && docker run --rm ${USER}/python:3.5.3 python --version
 echo -n '3.6.0: '  && docker run --rm ${USER}/python:3.6.0 python --version
 # EOF
